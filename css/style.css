@@ -1,0 +1,367 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+
+body {
+  color: white;
+  line-height: 1.1;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 100;
+  background: #ff7d63;
+}
+
+body a {
+  text-decoration: none;
+  color: white;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+form {
+  width: 360px;
+  margin: auto;
+  padding-top: 80px;
+  font-size: 1.1em;
+}
+
+
+.choice1 {
+  background: red;
+}
+
+#firstline {
+  margin-top: 10px;
+}
+
+#birthdayselection {
+  margin-top: 10px;
+}
+
+/* #choice1 {
+    font-weight: normal;
+    padding: 0 10px 0 3px;
+    vertical-align: middle;
+}
+#choice2 {
+    font-weight: normal;
+    padding: 0 10px 0 3px;
+    vertical-align: middle;
+} */
+
+.wide {
+  width: 360px;
+}
+.halfwidth {
+  width: 177px;
+}
+
+select {
+    -webkit-appearance: menulist;
+    box-sizing: border-box;
+    align-items: center;
+    white-space: pre;
+    -webkit-rtl-ordering: logical;
+    color: black;
+    cursor: default;
+    border-radius: 5px;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em;
+    font: 400 1.2em system-ui;
+    height: 35px;
+    padding: 5px;
+}
+
+h1 {
+  font-size: 31px;
+  color: #ffdf5d;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+h2 {
+  color: #ffc3b7;
+  font-weight: 600;
+  font-size: 1.2em;
+  margin: 20px 0 20px 0;
+}
+
+button {
+background: linear-gradient(#ffdf5d, #ee6711);
+  color: #fff;
+  border-radius: 45px;
+  border: none;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  width: 180px;
+  height: 45px;
+  vertical-align: middle;
+  font-family: 'Work Sans', sans-serif;
+  cursor: pointer;
+  margin-top: 20px;
+}
+button:hover {
+  background: #ee6711;
+  box-shadow: #fff 0 0 5px;
+}
+
+button:focus {
+  outline: none;
+}
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #999BA9;
+  font-size: 14pt;
+  font-weight: 400;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #999BA9;
+  font-size: 14pt;
+  font-weight: 400;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #999BA9;
+  font-size: 14pt;
+  font-weight: 400;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #999BA9;
+  font-size: 14pt;
+  font-weight: 400;
+}
+
+#columnone {
+  width: 360px;
+  float: left;
+}
+
+
+#columntwo {
+  width: 360px;
+  float: right;
+}
+
+form {
+  width: 800px;
+}
+
+input[type="text"] {
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid white;
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+  height: 40px;
+  font-size: 16pt;
+  margin-top: 6px;
+  padding: 6px;
+  vertical-align: 20px;
+}
+input[type="password"] {
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid white;
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+  height: 40px;
+  font-size: 16pt;
+  margin-top: 6px;
+  padding: 6px;
+  vertical-align: 20px;
+}
+
+
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #FDA08F;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #FDA08F;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #FDA08F;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #FDA08F;
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type=range] {
+  height: 32px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+  background: none ;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 14px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: #E94824;
+  border-radius: 9px;
+  border: 0px solid #010101;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000031;
+  border: 0px solid #00001E;
+  height: 26px;
+  width: 26px;
+  border-radius: 15px;
+  background: #FFFFFF;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -6px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #E94824;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 14px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #000000;
+  background: #E94824;
+  border-radius: 9px;
+  border: 0px solid #010101;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000031;
+  border: 0px solid #00001E;
+  height: 26px;
+  width: 26px;
+  border-radius: 15px;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 14px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #E94824;
+  border: 0px solid #010101;
+  border-radius: 18px;
+  box-shadow: 1px 1px 1px #000000;
+}
+input[type=range]::-ms-fill-upper {
+  background: #E94824;
+  border: 0px solid #010101;
+  border-radius: 18px;
+  box-shadow: 1px 1px 1px #000000;
+}
+input[type=range]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 0px 0px 0px #000031;
+  border: 0px solid #00001E;
+  height: 26px;
+  width: 100%;
+  border-radius: 15px;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #E94824;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #E94824;
+}
+
+.styled-select select {
+   background: #E94824;
+   border: none;
+   font-size: 14px;
+   height: 40px;
+   padding: 10px; /* If you add too much padding here, the options won't show in IE */
+   width: 100%;
+   color: white;
+   font-family: 'Work Sans', sans-serif;
+   font-size: 18px;
+}
+
+.styled-select select:focus {
+  outline: none;
+}
+.yellow  { background-color: #eec111; }
+
+.styled-select {
+   background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+   height: 40px;
+   overflow: hidden;
+   width: 100%;
+}
+
+.rounded {
+   -webkit-border-radius: 40px;
+   -moz-border-radius: 40px;
+   border-radius: 40px;
+}
